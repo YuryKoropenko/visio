@@ -7,7 +7,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.25
-	font-family: "RobotoRegular", sans-serif
+	font-family: "MuseoSansRegular", sans-serif
 	overflow-x: hidden
 
 .hidden
@@ -210,3 +210,172 @@ body
 		float: left
 		display: block
 		margin-left: 0
+.content
+	&__wrapper
+		@extend .clearfix
+.sidebar
+	float: left
+	width: 310px
+	&__title
+		width: 100%
+		padding: 20px
+		display: block
+		background-color: #590000
+		&-name
+			display: block
+			padding-left: 36px
+			position: relative
+			color: #fff
+			font-family: "MuseoSansCyrl900", sans-serif
+			text-transform: uppercase
+			line-height: 100%
+			&::before
+				content: ''
+				background-image: url(../img/side-bar-icon.png)
+				background-position: right top
+				width: 16px
+				height: 16px
+				position: absolute
+				font-size: 22px
+				left: 0
+				top: 0
+				line-height: 100%
+				color: #fff
+	&-menu
+		-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15)
+		-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15)
+		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15)
+		&__title
+			background-color: #515052
+			width: 100%
+			padding: 20px
+			display: block
+			cursor: pointer
+			&-name
+				display: block
+				position: relative
+				color: #fff
+				font-family: "MuseoSansCyrl900", sans-serif
+				text-transform: uppercase
+				line-height: 100%
+				padding-right: 20px
+				&::after
+					content: ''
+					background-image: url(../img/side-bar-icon.png)
+					background-position: left bottom
+					width: 16px
+					height: 10px
+					position: absolute
+					font-size: 12px
+					right: 0
+					top: 50%
+					margin-top: -5px
+					line-height: 100%
+		&__wrapper
+			padding: 17px 21px
+			display: none
+		&__item
+			display: block
+			padding-bottom: 10px
+		&__link
+			color: #515052
+			font-family: "OpenSansRegular", sans-serif
+			font-size: 14px
+			display: inline-block
+			&:hover
+				color: #515052
+				text-decoration: underline
+.main-content
+	float: right
+	width: 850px
+	&__title
+		padding-left: 21px
+		border-left: 5px solid #590000
+		color: #333138
+		font-size: 24px
+		line-height: 18px
+		font-family: "MuseoSansRegular", sans-serif
+		margin-top: 29px
+	&__description
+		margin-top: 21px
+		display: block
+		&-p
+			line-height: 24px
+			color: #515052
+			margin-bottom: 10px
+.path
+	margin-top: 9px
+	&__item
+		display: inline-block
+		&::before
+			content: '/'
+			margin: 0 4px
+			color: #515052
+			font-size: 12px
+			line-height: 30px
+			font-family: "OpenSansRegular", sans-serif
+		&:first-child
+			&::before
+				display: none
+	&__link
+		color: #515052
+		font-size: 12px
+		line-height: 30px
+		font-family: "OpenSansRegular", sans-serif
+		&:hover
+			color: #515052
+			text-decoration: underline
+.consultation
+	margin-top: 26px
+	padding: 40px 40px 43px
+	background-color: #f2eff4
+	&__row
+		@extend .clearfix
+		padding-bottom: 20px
+	&__title
+		color: #333138
+		font-size: 24px
+		line-height: 18px
+		display: block
+	&__description
+		color: #333138
+		font-size: 14px
+		line-height: 30px
+		margin-top: 9px
+	&__input
+		width: 48%
+		height: 50px
+		border: 1px solid #c7c4c9
+		border-radius: 2px
+		padding: 0 20px
+		line-height: 50px
+		&-left
+			float: left
+		&-right
+			float: right
+	&__comment-area
+		width: 100%
+		border: 1px solid #c7c4c9
+		border-radius: 2px
+		padding: 13px 20px 0
+		height: 100px
+		resize: none
+		line-height: 18px
+	&__button
+		border: none
+		height: 50px
+		border-radius: 2px
+		padding: 0 39px
+		background-image: url(../img/button-grad.jpg)
+		background-repeat: repeat-x
+		background-position: left center
+		color: #fefefe
+		text-transform: uppercase
+		font-family: "OpenSansRegular", sans-serif
+		font-size: 13px
+		display: inline-block
+		&-wrapper
+			text-align: right
+			padding-top: 20px
+.content__wrapper
+	padding-bottom: 40px

@@ -11,4 +11,10 @@ $(document).ready(function() {
 		return false
 	});
 
+/**/
+	$('.sidebar-menu__title').on('click', function() {
+		$(this).parent().children('.sidebar-menu__wrapper').stop(true, false).slideToggle(300);
+		$(this).children('.sidebar-menu__title-name').toggleClass('sidebar-menu__title-name-open');
+	});
+
 });

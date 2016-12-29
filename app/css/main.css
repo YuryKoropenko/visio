@@ -26,13 +26,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .header-bottom__bottom:after, .search__form:after, .mob-header:after, .nav-toggle:after {
+.clearfix:after, .header-bottom__bottom:after, .search__form:after, .mob-header:after, .nav-toggle:after, .content__wrapper:after, .consultation__row:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .header-bottom__bottom:before, .search__form:before, .mob-header:before, .nav-toggle:before {
+.clearfix:before, .header-bottom__bottom:before, .search__form:before, .mob-header:before, .nav-toggle:before, .content__wrapper:before, .consultation__row:before {
   content: '';
   display: table;
 }
@@ -65,12 +65,60 @@ ol, ul {
   line-height: 50px;
 }
 
+.sidebar-menu__title-name-open::after {
+  background-position: top left !important;
+}
+
+.consultation__comment-area::-webkit-input-placeholder {
+  line-height: 18px !important;
+}
+
+.consultation__comment-area::-moz-placeholder {
+  line-height: 18px !important;
+}
+
+.consultation__comment-area:-moz-placeholder {
+  line-height: 18px !important;
+}
+
+.consultation__comment-area:-ms-input-placeholder {
+  line-height: 18px !important;
+}
+
+.consultation__input::-webkit-input-placeholder, .consultation__comment-area::-webkit-input-placeholder {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  color: #959397;
+  line-height: 50px;
+}
+
+.consultation__input::-moz-placeholder, .consultation__comment-area::-moz-placeholder {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  color: #959397;
+  line-height: 50px;
+}
+
+.consultation__input:-moz-placeholder, .consultation__comment-area:-moz-placeholder {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  color: #959397;
+  line-height: 50px;
+}
+
+.consultation__input:-ms-input-placeholder, .consultation__comment-area:-ms-input-placeholder {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  color: #959397;
+  line-height: 50px;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
   line-height: 1.25;
-  font-family: "RobotoRegular", sans-serif;
+  font-family: "MuseoSansRegular", sans-serif;
   overflow-x: hidden;
 }
 
@@ -343,4 +391,234 @@ body {
   float: left;
   display: block;
   margin-left: 0;
+}
+
+.sidebar {
+  float: left;
+  width: 310px;
+}
+
+.sidebar__title {
+  width: 100%;
+  padding: 20px;
+  display: block;
+  background-color: #590000;
+}
+
+.sidebar__title-name {
+  display: block;
+  padding-left: 36px;
+  position: relative;
+  color: #fff;
+  font-family: "MuseoSansCyrl900", sans-serif;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.sidebar__title-name::before {
+  content: '';
+  background-image: url(../img/side-bar-icon.png);
+  background-position: right top;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  font-size: 22px;
+  left: 0;
+  top: 0;
+  line-height: 100%;
+  color: #fff;
+}
+
+.sidebar-menu {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-menu__title {
+  background-color: #515052;
+  width: 100%;
+  padding: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.sidebar-menu__title-name {
+  display: block;
+  position: relative;
+  color: #fff;
+  font-family: "MuseoSansCyrl900", sans-serif;
+  text-transform: uppercase;
+  line-height: 100%;
+  padding-right: 20px;
+}
+
+.sidebar-menu__title-name::after {
+  content: '';
+  background-image: url(../img/side-bar-icon.png);
+  background-position: left bottom;
+  width: 16px;
+  height: 10px;
+  position: absolute;
+  font-size: 12px;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  line-height: 100%;
+}
+
+.sidebar-menu__wrapper {
+  padding: 17px 21px;
+  display: none;
+}
+
+.sidebar-menu__item {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.sidebar-menu__link {
+  color: #515052;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.sidebar-menu__link:hover {
+  color: #515052;
+  text-decoration: underline;
+}
+
+.main-content {
+  float: right;
+  width: 850px;
+}
+
+.main-content__title {
+  padding-left: 21px;
+  border-left: 5px solid #590000;
+  color: #333138;
+  font-size: 24px;
+  line-height: 18px;
+  font-family: "MuseoSansRegular", sans-serif;
+  margin-top: 29px;
+}
+
+.main-content__description {
+  margin-top: 21px;
+  display: block;
+}
+
+.main-content__description-p {
+  line-height: 24px;
+  color: #515052;
+  margin-bottom: 10px;
+}
+
+.path {
+  margin-top: 9px;
+}
+
+.path__item {
+  display: inline-block;
+}
+
+.path__item::before {
+  content: '/';
+  margin: 0 4px;
+  color: #515052;
+  font-size: 12px;
+  line-height: 30px;
+  font-family: "OpenSansRegular", sans-serif;
+}
+
+.path__item:first-child::before {
+  display: none;
+}
+
+.path__link {
+  color: #515052;
+  font-size: 12px;
+  line-height: 30px;
+  font-family: "OpenSansRegular", sans-serif;
+}
+
+.path__link:hover {
+  color: #515052;
+  text-decoration: underline;
+}
+
+.consultation {
+  margin-top: 26px;
+  padding: 40px 40px 43px;
+  background-color: #f2eff4;
+}
+
+.consultation__row {
+  padding-bottom: 20px;
+}
+
+.consultation__title {
+  color: #333138;
+  font-size: 24px;
+  line-height: 18px;
+  display: block;
+}
+
+.consultation__description {
+  color: #333138;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 9px;
+}
+
+.consultation__input {
+  width: 48%;
+  height: 50px;
+  border: 1px solid #c7c4c9;
+  border-radius: 2px;
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+.consultation__input-left {
+  float: left;
+}
+
+.consultation__input-right {
+  float: right;
+}
+
+.consultation__comment-area {
+  width: 100%;
+  border: 1px solid #c7c4c9;
+  border-radius: 2px;
+  padding: 13px 20px 0;
+  height: 100px;
+  resize: none;
+  line-height: 18px;
+}
+
+.consultation__button {
+  border: none;
+  height: 50px;
+  border-radius: 2px;
+  padding: 0 39px;
+  background-image: url(../img/button-grad.jpg);
+  background-repeat: repeat-x;
+  background-position: left center;
+  color: #fefefe;
+  text-transform: uppercase;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.consultation__button-wrapper {
+  text-align: right;
+  padding-top: 20px;
+}
+
+.content__wrapper {
+  padding-bottom: 40px;
 }
