@@ -77,8 +77,8 @@ body
 .social
 	font-size: 0
 	padding-top: 18px
+	text-align: right
 	&__item
-		text-align: right
 		display: inline-block
 		margin-left: 10px
 		font-size: 16px
@@ -96,8 +96,9 @@ body
 			background-position: -51px 0
 .logo
 	float: left
+	width: 204px
 	&__link
-		width: 204px
+		width: 100%
 		height: 50px
 		display: block
 	&__img
@@ -131,7 +132,9 @@ body
 	float: left
 	margin-left: 60px
 	padding-top: 10px
+	width: 204px
 	&__number
+		width: 100%
 		color: #333138
 		font-family: "MuseoSansMedium", sans-serif
 		font-size: 24px
@@ -143,13 +146,15 @@ body
 		color: #515052
 .call-the-master
 	float: right
+	width: 210px
 	&__button
-		display: inline-block
+		width: 100%
+		display: block
+		text-align: center
 		border: 1px solid #515052
 		border-radius: 2px
 		text-transform: uppercase
 		height: 50px
-		padding: 0 45px
 		line-height: 50px
 		color: #515052
 		font-family: "OpenSansRegular", sans-serif
@@ -158,3 +163,50 @@ body
 			text-decoration: none
 			color: #515052
 			background-color: #e5e4e6
+.mob-header
+	float: right
+	@extend .clearfix
+	display: none
+	padding-top: 5px
+.mob-menu
+	float: left
+	&__icon
+		background-image: url(../img/phone-icon-header.png)
+		width: 27px
+		height: 22px
+		display: block
+		background-position: 0 0
+		cursor: pointer
+.mob-search
+	float: left
+	margin-left: 20px
+	&__icon
+		background-image: url(../img/phone-icon-header.png)
+		width: 22px
+		height: 22px
+		display: block
+		background-position: 0 -24px
+.mob-arrow
+	float: left
+	margin-left: 20px
+	&__icon
+		background-image: url(../img/phone-icon-header.png)
+		width: 20px
+		height: 20px
+		display: block
+		background-position: 0 -48px
+.nav-toggle
+	position: absolute
+	left: 0
+	right: 0
+	top: 50px
+	background-color: #f2eff4
+	width: 100%
+	padding: 0 10px
+	display: none
+	@extend .clearfix
+	.nav__item
+		width: 50%
+		float: left
+		display: block
+		margin-left: 0
