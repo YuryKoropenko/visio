@@ -1,27 +1,70 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .content-wrapper {
+    width: 1000px;
+  }
+  .main-content {
+    width: 670px;
+  }
   .nav__item {
     margin-left: 20px;
     padding-left: 30px;
   }
   .search, .phone {
-    margin-left: 20px;
+    margin-left: 48px;
   }
   .call-the-master {
     width: 200px;
+  }
+  .footer__f-menu {
+    margin-left: 108px;
+  }
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1000px) {
+  .content-wrapper {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .header-top__right, .search {
+    display: none;
+  }
+  .phone {
+    margin-left: 95px;
+    margin-left: 0;
+  }
+  .header-top__left {
+    width: 100%;
+  }
+  .phone {
+    float: right;
+    margin-right: 20px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .logo-footer {
+    float: right;
+    margin-bottom: 16px;
+  }
+  .footer__f-menu {
+    margin-left: 0;
+  }
+  .footer__phone {
+    clear: right;
+    margin-right: 0;
   }
   /**/
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
-  .header-top__right, .search {
-    display: none;
-  }
-  .phone {
-    margin-left: 95px;
-  }
   /**/
 }
 
@@ -42,14 +85,50 @@
     z-index: 999;
     border-bottom: none;
   }
-  .nav-toggle {
-    z-index: -1;
-  }
   .mob-header {
     display: block;
   }
   .header-top__wrapper {
     display: none;
+  }
+  .search-sidebar {
+    display: none !important;
+  }
+  .menu-sidebar {
+    width: 100%;
+    border: none;
+  }
+  .sidebar-line-mob {
+    padding-right: 0 !important;
+  }
+  .sidebar-line-mob .sidebar-menu__title {
+    width: 100% !important;
+  }
+  .sidebar-line {
+    display: none;
+  }
+  .sidebar-line-mob {
+    display: block;
+  }
+  .consultation {
+    padding: 22px 10px;
+    margin-left: -2%;
+    width: 104%;
+  }
+  .consultation__input {
+    width: 100%;
+  }
+  .consultation__input-left {
+    margin-bottom: 10px;
+  }
+  .consultation__row {
+    padding-bottom: 10px;
+  }
+  .consultation__button {
+    width: 100%;
+  }
+  .content__wrapper {
+    padding-bottom: 0;
   }
   /**/
 }
@@ -82,6 +161,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 1000px) {
+  .sidebar-line {
+    display: none;
+  }
   /**/
 }
 
