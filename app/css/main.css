@@ -144,6 +144,24 @@ ol, ul {
   float: right;
 }
 
+.hide-element-w {
+  padding-top: 20px;
+}
+
+.f-menu__wrapper .hide-element-f {
+  display: block !important;
+  float: left !important;
+  clear: both;
+  margin-bottom: 0;
+}
+
+.f-menu__wrapper .hide-element-l {
+  width: auto;
+  display: block !important;
+  float: left !important;
+  clear: both;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -854,14 +872,28 @@ body {
   width: 100% !important;
 }
 
+.sidebar-line-mob .sidebar-menu__title:hover {
+  background-color: #515052;
+}
+
+.sidebar-line-mob .sidebar-menu__title:hover .sidebar-menu__title-name {
+  color: #fff;
+}
+
+.sidebar-line-mob .sidebar-menu__title:hover .sidebar-menu__title-name::after {
+  background-position: right center;
+}
+
 .sidebar-line-mob .sidebar-menu__wrapper {
   width: 100%;
   background-color: #fff;
+  z-index: 999;
 }
 
 .sidebar-line-mob .sidebar-menu__title-name::after {
   background-image: url(../img/mob-arrow.png) !important;
   background-repeat: no-repeat;
+  background-position: left center;
   width: 10px;
   height: 16px;
   margin-top: -8px;

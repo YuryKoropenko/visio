@@ -520,13 +520,21 @@ body
 	display: none
 	.sidebar-menu__title
 		width: 100% !important
+		&:hover
+			background-color: #515052
+			.sidebar-menu__title-name
+				color: #fff
+				&::after
+					background-position: right center
 	.sidebar-menu__wrapper
 		width: 100%
 		background-color: #fff
+		z-index: 999
 	.sidebar-menu__title-name
 		&::after
 			background-image: url(../img/mob-arrow.png) !important
 			background-repeat: no-repeat
+			background-position: left center
 			width: 10px
 			height: 16px
 			margin-top: -8px

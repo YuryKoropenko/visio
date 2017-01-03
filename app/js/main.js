@@ -13,7 +13,6 @@ $(document).ready(function() {
 
 /**/
 	$('.sidebar .sidebar-menu__title').on('click', function() {
-		$('.sidebar-menu__wrapper').slideUp(300);
 		$(this).parent().children('.sidebar-menu__wrapper').stop(true, false).slideToggle(300);
 		$(this).children('.sidebar-menu__title-name').toggleClass('sidebar-menu__title-name-open');
 	});
@@ -32,12 +31,6 @@ $(document).ready(function() {
 		$('.menu-sidebar').removeClass('menu-sidebar-active');
 		$(this).parent().children('.sidebar-toggle-menu').stop(true, false).slideToggle(300);
 		$(this).toggleClass('menu-sidebar-active');
-	});
-
-/**/
-	$('.sidebar-line-mob .sidebar-menu__title').on('click', function() {
-		$('.sidebar-menu__title').hide();
-		
 	});
 
 });

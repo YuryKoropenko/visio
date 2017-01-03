@@ -130,6 +130,41 @@
   .content__wrapper {
     padding-bottom: 0;
   }
+  .f-menu__link {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .f-menu__title {
+    font-size: 16px;
+  }
+  .footer__phone {
+    display: block !important;
+  }
+  .footer__phone .phone__number {
+    font-size: 16px;
+  }
+  .footer__phone .phone__email {
+    font-size: 12px;
+  }
+  .f-menu__wrapper {
+    width: 50%;
+    margin-left: 0;
+  }
+  .footer__f-menu {
+    width: 100%;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .footer__phone {
+    display: none !important;
+  }
+  .footer__top {
+    padding-bottom: 17px;
+  }
+  .f-menu__wrapper-last {
+    margin-top: 20px;
+  }
   /**/
 }
 
@@ -156,6 +191,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .hide-element-w {
+    display: none;
+  }
   /**/
 }
 
