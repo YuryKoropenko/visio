@@ -33,4 +33,20 @@ $(document).ready(function() {
 		$(this).parent().children('.sidebar-toggle-menu').stop(true, false).slideToggle(300);
 	});
 
+/**/
+	$(".sl1 .sl1__slide img").click(function(){	// Событие клика на маленькое изображение
+		var img = $(this);	// Получаем изображение, на которое кликнули
+		var src = img.attr('src'); // Достаем из этого изображения путь до картинки
+		$("body").append("<div class='popup-img'>"+ //Добавляем в тело документа разметку всплывающего окна
+						 "<div class='popup-bg'></div>"+ // Блок, который будет служить фоном затемненным
+						 "<img src='"+src+"' class='popup-img-active' />"+ // Само увеличенное фото
+						 "</div>"); 
+		$(".popup-img").fadeIn(800); // Медленно выводим изображение
+		$(".popup-bg").click(function(){	// Событие клика на затемненный фон	   
+			$(".popup-img").fadeOut(800);	// Медленно убираем всплывающее окно
+			setTimeout(function() {	// Выставляем таймер
+				$(".popup-img").remove(); // Удаляем разметку всплывающего окна
+			}, 800);
+		});
+	});
 });
