@@ -128,3 +128,62 @@ ol, ul
 		display: block !important
 		float: left !important
 		clear: both
+.sl1
+	width: 100%
+	padding: 58px 0
+	.sl1__slide
+		text-align: center
+		img
+			display: inline-block
+.sl2
+	width: 100%
+	@extend .clearfix
+	border-top: 1px solid #c7c4c9
+	height: 100px
+	.slick-list
+		width: 50%
+		float: left
+	.sl2__slide
+		text-align: center
+		height: 100px
+		padding-top: 25px
+		img
+			display: inline-block
+	.slick-arrow
+		text-indent: -9999px
+		width: 25%
+		display: block
+		border: none
+		border-radius: none
+		position: relative
+		line-height: 100px
+		background-color: transparent
+		float: left
+	.slick-prev
+		border-right: 1px solid #c7c4c9 !important
+		&::after
+			content: ''
+			width: 15px
+			height: 24px
+			background-image: url(../img/prod-slider/s-arrow.png)
+			background-repeat: no-repeat
+			background-position: left center
+			position: absolute
+			left: 50%
+			margin-left: -7.5px
+			top: 50%
+			margin-top: -12px
+	.slick-next
+		border-left: 1px solid #c7c4c9 !important
+		&::after
+			content: ''
+			width: 15px
+			height: 24px
+			background-image: url(../img/prod-slider/s-arrow.png)
+			background-repeat: no-repeat
+			background-position: right center
+			position: absolute
+			left: 50%
+			margin-left: -7.5px
+			top: 50%
+			margin-top: -12px

@@ -29,8 +29,8 @@ $(document).ready(function() {
 	$('.menu-sidebar').on('click', function() {
 		$('.sidebar-toggle-menu').fadeOut(300);
 		$('.menu-sidebar').removeClass('menu-sidebar-active');
-		$(this).parent().children('.sidebar-toggle-menu').stop(true, false).slideToggle(300);
 		$(this).toggleClass('menu-sidebar-active');
+		$(this).parent().children('.sidebar-toggle-menu').stop(true, false).slideToggle(300);
 	});
 
 });
