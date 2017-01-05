@@ -60,3 +60,11 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "MuseoSansBlack";
+  src: url("../fonts/MuseoSansBlack/MuseoSansBlack.eot");
+  src: url("../fonts/MuseoSansBlack/MuseoSansBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBlack/MuseoSansBlack.woff") format("woff"), url("../fonts/MuseoSansBlack/OpenSansEMuseoSansBlackxtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

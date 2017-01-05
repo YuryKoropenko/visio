@@ -49,4 +49,10 @@ $(document).ready(function() {
 			}, 800);
 		});
 	});
+
+/**/
+	$('.main-content__more-button').on('click', function() {
+		$(this).parent().parent().children('.main-content__more-hidden').slideDown(300);
+		$(this).parent().hide();
+	});
 });
