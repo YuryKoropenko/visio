@@ -32,7 +32,7 @@ $(document).ready(function() {
 	$('.sidebar-toggle-menu .sidebar-menu__title').on('click', function() {
 		$('.sidebar-menu__wrapper').fadeOut(300);
 		$('.sidebar-menu__title').removeClass('sidebar-menu__title-active');
-		$(this).parent().children('.sidebar-menu__wrapper').stop(true, false).fadeToggle(300);
+		$(this).parent().children('.sidebar-menu__wrapper').stop(true, false).fadeIn(300);
 		$(this).toggleClass('sidebar-menu__title-active');
 	});
 
