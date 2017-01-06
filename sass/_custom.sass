@@ -25,6 +25,10 @@ input, input:active, input:focus
 ol, ul
 	list-style: none
 
+a
+	&:hover, &:active, &:focus
+		text-decoration: none
+
 .clearfix
 	&:after
 		content: ''
@@ -34,27 +38,49 @@ ol, ul
 		content: ''
 		display: table
 
+.pop-up__input
+	&::-webkit-input-placeholder
+		font-family: "OpenSansRegular", sans-serif
+		color: #959397
+		font-size: 14px
+		line-height: 47px
+	&::-moz-placeholder
+		font-family: "OpenSansRegular", sans-serif
+		color: #959397
+		font-size: 14px
+		line-height: 47px
+	&:-moz-placeholder
+		font-family: "OpenSansRegular", sans-serif
+		color: #959397
+		font-size: 14px
+		line-height: 47px
+	&:-ms-input-placeholder
+		font-family: "OpenSansRegular", sans-serif
+		color: #959397
+		font-size: 14px
+		line-height: 47px
+
 .search__input
 	&::-webkit-input-placeholder
 		font-family: "MuseoSansLightItalic", sans-serif
 		color: #515052
 		font-size: 14px
-		line-height: 50px
+		line-height: 46px
 	&::-moz-placeholder
 		font-family: "MuseoSansLightItalic", sans-serif
 		color: #515052
 		font-size: 14px
-		line-height: 50px
+		line-height: 46px
 	&:-moz-placeholder
 		font-family: "MuseoSansLightItalic", sans-serif
 		color: #515052
 		font-size: 14px
-		line-height: 50px
+		line-height: 46px
 	&:-ms-input-placeholder
 		font-family: "MuseoSansLightItalic", sans-serif
 		color: #515052
 		font-size: 14px
-		line-height: 50px
+		line-height: 46px
 
 .sidebar-menu__title-name-open
 	&::after
@@ -95,13 +121,13 @@ ol, ul
 .search-sidebar
 	.search__input
 		&::-webkit-input-placeholder
-			line-height: 40px
+			line-height: 36px
 		&::-moz-placeholder
-			line-height: 40px
+			line-height: 36px
 		&:-moz-placeholder
-			line-height: 40px
+			line-height: 36px
 		&:-ms-input-placeholder
-			line-height: 40px
+			line-height: 36px
 
 .content-wrapper
 	width: 1200px
@@ -214,3 +240,13 @@ ol, ul
 	width: 100%
 .full-content
 	width: 100% !important
+.mfp-close
+	width: 32px
+	height: 32px
+	border: 1px solid #fff !important
+	border-radius: 50%
+	color: #fff !important
+	line-height: 30px
+	padding-left: 1.5px !important
+	right: -42px !important
+	top: -42px !important

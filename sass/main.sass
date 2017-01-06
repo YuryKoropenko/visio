@@ -118,6 +118,9 @@ body
 		border-radius: 2px 0 0 2px
 		float: left
 		+percent(215, 280)
+		color: #515052
+		font-size: 14px
+		font-family: "MuseoSansMedium", sans-serif
 	&__button
 		+percent(65, 280)
 		height: 50px
@@ -128,6 +131,8 @@ body
 		background-image: url(../img/loupe.png)
 		background-repeat: no-repeat
 		background-position: center center
+		&:hover
+			background-color: #820101
 .phone
 	text-align: right
 	float: left
@@ -145,6 +150,10 @@ body
 		font-size: 14px
 		line-height: 18px
 		color: #515052
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+			color: #515052
 .call-the-master
 	float: right
 	width: 210px
@@ -160,10 +169,16 @@ body
 		color: #515052
 		font-family: "OpenSansRegular", sans-serif
 		font-size: 13px
+		text-decoration: none
 		&:hover
-			text-decoration: none
-			color: #515052
-			background-color: #e5e4e6
+			color: #fff
+			background-color: #590000
+			&:active
+				background-color: #820101
+				color: #fff
+			&:focus
+				text-decoration: none
+				color: #fff
 .mob-header
 	float: right
 	@extend .clearfix
@@ -187,6 +202,7 @@ body
 		height: 22px
 		display: block
 		background-position: 0 -24px
+		cursor: pointer
 .mob-arrow
 	float: left
 	margin-left: 20px
@@ -274,7 +290,6 @@ body
 					line-height: 100%
 		&__wrapper
 			padding: 17px 21px
-			display: none
 		&__item
 			display: block
 			padding-bottom: 10px
@@ -300,6 +315,7 @@ body
 	&__description
 		margin-top: 21px
 		display: block
+		position: relative
 		&-p
 			line-height: 24px
 			color: #515052
@@ -385,6 +401,7 @@ body
 				&:hover
 					color: #fefefe
 					text-decoration: none
+					background-color: #820101
 				&-wp
 					position: absolute
 					bottom: 30px
@@ -599,18 +616,15 @@ body
 				font-family: "MuseoSansBlack", sans-serif
 	&__inform
 		width: 100%
-		height: 145px
 		background-color: #661818
-		padding-top: 40px
-		padding-left: 40px
-		padding-right: 40px
+		padding: 40px
 		&-block
 			@extend .clearfix
 			&-item
 				padding-left: 74px
 				position: relative
 				float: left
-				margin-left: 56px
+				width: 100 / 3 + %
 				&:first-child
 					margin-left: 0
 			&-circle
@@ -715,6 +729,8 @@ body
 				display: block
 	&__bslider
 		width: 100%
+		.slick-arrow
+			display: none !important
 		&-item
 			display: inline-block
 			width: 58%
@@ -737,6 +753,26 @@ body
 			font-family: "MuseoSansRegular", sans-serif
 			line-height: 18px
 			margin-top: 5px
+	&__arrow
+		position: absolute
+		right: 0
+		top: -45px
+		font-size: 0
+		&-button
+			width: 15px
+			height: 24px
+			background-image: url(../img/prod-slider/s-arrow.png)
+			background-repeat: no-repeat
+			background-position: left top
+			display: inline-block
+			cursor: pointer
+			&:hover
+				background-position: left bottom
+			&:last-child
+				background-position: right top
+				margin-left: 16px
+				&:hover
+					background-position: right bottom
 .path
 	margin-top: 9px
 	&__item
@@ -800,7 +836,7 @@ body
 		height: 50px
 		border-radius: 2px
 		padding: 0 39px
-		background-image: url(../img/button-grad.jpg)
+		background-color: #590000
 		background-repeat: repeat-x
 		background-position: left center
 		color: #fefefe
@@ -808,6 +844,8 @@ body
 		font-family: "OpenSansRegular", sans-serif
 		font-size: 13px
 		display: inline-block
+		&:hover
+			background-color: #820101
 		&-wrapper
 			text-align: right
 			padding-top: 20px
@@ -820,7 +858,6 @@ body
 		border-bottom: 1px solid #504f51
 		padding-top: 40px
 	&__bootom
-		height: 60px
 		background-color: #333138
 .cont-wrapper
 	width: 1200px
@@ -837,6 +874,9 @@ body
 		color: #fff
 	.phone__email
 		color: #d4d4d4
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 .f-menu
 	&__wrapper
 		float: left
@@ -863,9 +903,27 @@ body
 			color: #d4d4d4
 			text-decoration: underline
 .copyright
-	color: #d4d4d4
-	font-size: 14px
-	line-height: 60px
+	@extend .clearfix
+	width: 100%
+	padding: 20px 0
+	&__right
+		color: #d4d4d4
+		font-size: 14px
+		float: right
+		width: 50%
+		text-align: right
+		&-link
+			color: #d4d4d4
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+				color: #d4d4d4
+	&__left
+		color: #d4d4d4
+		font-size: 14px
+		float: left
+		width: 50%
+		text-align: left
 .sidebar-line, .sidebar-line-mob
 	width: 100%
 	height: 60px
@@ -926,6 +984,7 @@ body
 	top: 60px
 	padding-bottom: 10px
 	display: none
+	z-index: 999
 	.sidebar-menu
 		-webkit-box-shadow: none
 		-moz-box-shadow: none
@@ -942,6 +1001,7 @@ body
 		position: absolute
 		right: 0
 		top: 0 !important
+		display: none
 .sidebar-menu__title-active
 	background-color: #515052 !important
 	.sidebar-menu__title-name
@@ -994,3 +1054,89 @@ body
 			text-decoration: none
 			color: #fff
 			background-color: #c7c4c9
+.pop-up
+	width: 385px
+	background-color: #f2eff4
+	margin: 0 auto
+	position: relative
+	&__title
+		color: #333138
+		text-transform: uppercase
+		font-size: 24px
+		font-family: "MuseoSansBlack", sans-serif
+	&__p
+		color: #333138
+		font-size: 16px
+		line-height: 25px
+		font-family: "MuseoSansRegular", sans-serif
+		margin-bottom: 20px
+		margin-top: 10px
+	&__wrapper
+		text-align: center
+		padding-left: 40px
+		padding-right: 40px
+		padding-top: 32px
+		padding-bottom: 114px
+	&__input
+		width: 100%
+		display: block
+		height: 50px
+		border: 1px solid #c7c4c9
+		border-radius: 2px
+		padding-left: 34px
+		position: relative
+		background-repeat: no-repeat
+		background-position: 10px center
+		&-av
+			margin-bottom: 10px
+			background-image: url(../img/popup-icon/1.png)
+		&-ph
+			background-image: url(../img/popup-icon/2.png)
+	&__button
+		width: 100%
+		display: block
+		height: 50px
+		background-color: #590000
+		line-height: 50px
+		border-radius: 2px
+		border: none
+		text-transform: uppercase
+		color: #fff
+		font-size: 13px
+		font-family: "OpenSansRegular", sans-serif
+		padding: 0
+		&-wrapper
+			position: absolute
+			bottom: 44px
+			left: 40px
+			right: 40px
+.pop-up-ok
+	width: 385px
+	background-color: #f2eff4
+	margin: 0 auto
+	position: relative
+	&__wrapper
+		text-align: center
+		padding-left: 40px
+		padding-right: 40px
+		padding-top: 32px
+		padding-bottom: 24px
+	&__p
+		text-transform: none !important
+	&__title
+		color: #333138
+		font-size: 24px
+		font-family: "MuseoSansBlack", sans-serif
+.search-mob
+	width: 100%
+	position: absolute
+	padding: 20px 10px
+	top: 68px
+	left: 0
+	right: 0
+	z-index: 998
+	background-color: #f2eff4
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15)
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15)
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15)
+	display: none

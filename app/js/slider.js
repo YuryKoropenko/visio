@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	$('.main-content__slider').slick({
 		arrows: false,
-		dots: true
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 3000
 	});
 });

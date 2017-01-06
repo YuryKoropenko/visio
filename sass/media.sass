@@ -37,6 +37,10 @@
 	.main-content__lprod-item
 		width: 210px
 		margin-left: 20px
+	.main-content__inform
+		padding: 20px
+	.main-content__inform-block-item
+		width: 100 / 3 + %
 	/**/
 
 /* Medium Devices, Desktops */
@@ -88,6 +92,13 @@
 	.main-content__top-img
 		margin-left: -2.1%
 		width: 104.2%
+	.main-content__slider, .main-content__inform
+		display: block
+		width: 105%
+		margin-left: -2.5%
+		height: auto
+		img
+			width: 100%
 	/**/
 
 
@@ -235,11 +246,56 @@
 		.main-content__card-info-button
 			height: 40px
 			line-height: 40px
+	.copyright__right
+		width: 100%
+		float: none
+		text-align: center
+	.copyright__left
+		width: 100%
+		float: none
+		text-align: center
+	.main-content__slider-text-title
+		font-size: 24px
+		line-height: 30px
+	.main-content__slider-text
+		left: 10px
+		bottom: 40px
+	.main-content__slider
+		.slick-dots
+			bottom: 10px
+			right: 9px
+	.main-content__inform-block-item
+		width: 100%
+		border-bottom: 1px solid #fff
+		margin-top: 20px
+		padding-bottom: 20px
+		float: none
+		padding-left: 84px
+		&:last-child
+			border-bottom: none
+	.main-content__inform
+		padding: 0
+	.main-content__inform-block-circle
+		left: 10px
+	.main-content__partners-item
+		width: 50%
+		img
+			width: 120px
+			height: auto
+	.main-content__bslider
+		margin-bottom: 26px
+	.pop-up, .pop-up-ok
+		width: 80%
 	/**/
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.pop-up, .pop-up-ok
+		width: 105%
+		margin-left: -2.5%
+	.mfp-close
+		display: none
 	/**/
 
 
