@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/magnific-popup/dist/magnific-popup.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -1148,7 +1148,7 @@
 										Сделать мир безопаснее, сделав его совершеннее<br>и гуманнее.
 									</p>
 									<div class="main-content__card-info-button-wp">
-										<a href="#" class="main-content__card-info-button">
+										<a href="#back-call" class="main-content__card-info-button">
 											оформить заказ
 										</a>
 									</div>
@@ -1288,15 +1288,40 @@
 		<div class="footer__bootom">
 			<div class="content-wrapper">
 				<div class="copyright">
-					&copy; 2016. Visio-plus. Все права защищены.
+					<div class="copyright__left">
+						&copy; 2016. Visio-plus. Все права защищены.
+					</div>
+					<div class="copyright__right">
+						Разработано: <a href="#" class="copyright__right-link">REKOON</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<div class="pop-up mfp-hide" id="back-call">
+		<div class="pop-up__wrapper">
+			<b class="pop-up__title">
+				ОСТАВЬТЕ ЗАЯВКу
+			</b>
+			<p class="pop-up__p">
+				Наш менеджер свяжется с Вами<br>в ближайшее время
+			</p>
+			<form action="">
+				<input type="text" placeholder="Ваше имя" class="pop-up__input pop-up__input-av">
+				<input type="text" placeholder="Ваш телефон" class="pop-up__input pop-up__input-ph">
+				<div class="pop-up__button-wrapper">
+					<button type="submit" class="pop-up__button">
+						Отправить
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.js"></script>
 	<script type="text/javascript" src="js/prod-slider.js"></script>
+	<script type="text/javascript" src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </body>

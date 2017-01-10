@@ -193,12 +193,15 @@ a
 			height: 24px
 			background-image: url(../img/prod-slider/s-arrow.png)
 			background-repeat: no-repeat
-			background-position: left center
+			background-position: left top
 			position: absolute
 			left: 50%
 			margin-left: -7.5px
 			top: 50%
 			margin-top: -12px
+		&:hover
+			&::after
+				background-position: left bottom
 	.slick-next
 		border-left: 1px solid #c7c4c9 !important
 		&::after
@@ -207,12 +210,15 @@ a
 			height: 24px
 			background-image: url(../img/prod-slider/s-arrow.png)
 			background-repeat: no-repeat
-			background-position: right center
+			background-position: right top
 			position: absolute
 			left: 50%
 			margin-left: -7.5px
 			top: 50%
 			margin-top: -12px
+		&:hover
+			&::after
+				background-position: right bottom
 .popup-img-active
 	position: fixed
 	left: 0
@@ -250,3 +256,8 @@ a
 	padding-left: 1.5px !important
 	right: -42px !important
 	top: -42px !important
+.main-content__inform ul li a:hover
+	.main-content__inform-block-title
+		text-decoration: underline
+.main-content__card-slider img
+	cursor: pointer
