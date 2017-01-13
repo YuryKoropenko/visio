@@ -1,14 +1,8 @@
 $(document).ready(function(){
-	$('.main-content__bslider').slick({
-		arrows: true,
-		slidesToShow: 2,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1
-				}
-			}
-		]
+	$('.main-content__bslider').bxSlider({
+		pager: false,
+		minSlides: 2,
+		maxSlides: 2,
+		infiniteLoop: false
 	});
 });

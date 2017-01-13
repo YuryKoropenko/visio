@@ -30,13 +30,13 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-.clearfix:after, .content-wrapper:after, .sl2:after, .header:after, .header-bottom__bottom:after, .search__form:after, .mob-header:after, .nav-toggle:after, .content__wrapper:after, .main-content__articles-item:after, .main-content__card:after, .main-content__catalog:after, .main-content__contacts-top:after, .main-content__lprod:after, .main-content__slider .slick-dots:after, .main-content__inform-block:after, .main-content__partners:after, .consultation__row:after, .cont-wrapper:after, .copyright:after {
+.clearfix:after, .content-wrapper:after, .sl2:after, .main-content__bslider:after, .header:after, .header-bottom__bottom:after, .search__form:after, .mob-header:after, .nav-toggle:after, .content__wrapper:after, .main-content__articles-item:after, .main-content__card:after, .main-content__catalog:after, .main-content__contacts-top:after, .main-content__lprod:after, .main-content__slider .slick-dots:after, .main-content__inform-block:after, .main-content__partners:after, .consultation__row:after, .cont-wrapper:after, .copyright:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .content-wrapper:before, .sl2:before, .header:before, .header-bottom__bottom:before, .search__form:before, .mob-header:before, .nav-toggle:before, .content__wrapper:before, .main-content__articles-item:before, .main-content__card:before, .main-content__catalog:before, .main-content__contacts-top:before, .main-content__lprod:before, .main-content__slider .slick-dots:before, .main-content__inform-block:before, .main-content__partners:before, .consultation__row:before, .cont-wrapper:before, .copyright:before {
+.clearfix:before, .content-wrapper:before, .sl2:before, .main-content__bslider:before, .header:before, .header-bottom__bottom:before, .search__form:before, .mob-header:before, .nav-toggle:before, .content__wrapper:before, .main-content__articles-item:before, .main-content__card:before, .main-content__catalog:before, .main-content__contacts-top:before, .main-content__lprod:before, .main-content__slider .slick-dots:before, .main-content__inform-block:before, .main-content__partners:before, .consultation__row:before, .cont-wrapper:before, .copyright:before {
   content: '';
   display: table;
 }
@@ -238,6 +238,7 @@ a:hover, a:active, a:focus {
   line-height: 100px;
   background-color: transparent;
   float: left;
+  height: 11.3%;
 }
 
 .sl2 .slick-prev {
@@ -339,6 +340,30 @@ a:hover, a:active, a:focus {
   cursor: pointer;
 }
 
+.sidebar-menu__title-name-open::after {
+  background-position: center !important;
+  background-image: url(../img/arow-s-active.png) !important;
+}
+
+.sl2 {
+  overflow: hidden;
+  height: 900px;
+}
+
+.main-content__bslider-item {
+  margin-left: 0 !important;
+  width: 404px !important;
+}
+
+.bx-controls-direction {
+  display: none !important;
+}
+
+.popup-img .mfp-close {
+  left: 0 !important;
+  right: 0 !important;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -392,25 +417,25 @@ body {
 
 .nav__icon-2 {
   background-position: -27px 0;
-  width: 20px;
+  width: 22px;
   height: 24px;
 }
 
 .nav__icon-3 {
   background-position: -49px 0;
-  width: 24px;
+  width: 26px;
   height: 21px;
 }
 
 .nav__icon-4 {
   background-position: -75px 0;
-  width: 24px;
+  width: 26px;
   height: 22px;
 }
 
 .nav__icon-5 {
   background-position: -101px 0;
-  width: 24px;
+  width: 25px;
   height: 24px;
 }
 
@@ -710,8 +735,9 @@ body {
 
 .sidebar-menu__title-name::after {
   content: '';
-  background-image: url(../img/side-bar-icon.png);
-  background-position: left bottom;
+  background-image: url(../img/arow-s.png);
+  background-position: center;
+  background-repeat: no-repeat;
   width: 16px;
   height: 10px;
   position: absolute;
@@ -764,7 +790,7 @@ body {
   position: relative;
 }
 
-.main-content__description-p {
+.main-content__description p {
   line-height: 24px;
   color: #515052;
   margin-bottom: 10px;
@@ -1005,7 +1031,7 @@ body {
 .main-content__contacts-top-line {
   color: #333138;
   font-size: 16px;
-  padding: 8px 0;
+  padding: 2px 0;
 }
 
 .main-content__contacts-top-line-bold {
@@ -1269,7 +1295,7 @@ body {
   border-right: 6px solid transparent;
   border-top: 6px solid #c7c4c9;
   position: absolute;
-  bottom: -9px;
+  bottom: -7px;
   left: 50%;
   margin-left: -6px;
   display: block;
@@ -1339,8 +1365,6 @@ body {
 
 .main-content__bslider-item {
   display: inline-block;
-  width: 58%;
-  margin-left: 1%;
   margin-right: 1%;
 }
 

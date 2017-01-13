@@ -59,6 +59,7 @@ $(document).ready(function() {
 		var src = img.attr('src'); // Достаем из этого изображения путь до картинки
 		$("body").append("<div class='popup-img'>"+ //Добавляем в тело документа разметку всплывающего окна
 						 "<div class='popup-bg'></div>"+ // Блок, который будет служить фоном затемненным
+						 "<button class='mfp-close'>×</button>"+
 						 "<img src='"+src+"' class='popup-img-active' />"+ // Само увеличенное фото
 						 "</div>"); 
 		$(".popup-img").fadeIn(800); // Медленно выводим изображение
@@ -87,11 +88,11 @@ $(document).ready(function() {
 
 /**/
 	$('.main-content__arrow-button-left').on('click', function(e) {
-		$('.main-content__bslider .slick-prev').trigger('click', false);
+		$('.bx-prev').trigger('click', false);
 	});
 
 	$('.main-content__arrow-button-right').on('click', function(e) {
-		$('.main-content__bslider .slick-next').trigger('click', false);
+		$('.bx-next').trigger('click', false);
 	});
 
 /**/
@@ -103,4 +104,8 @@ $(document).ready(function() {
 	$('.call-the-master__button').magnificPopup();
 	$('.phone__communication-1').magnificPopup();
 	$('.main-content__card-info-button').magnificPopup();
+
+/**/
+	$('.consultation__input-right').mask('(999) 999-9999');
+	$('.pop-up__input-ph').mask('(999) 999-9999');
 });
